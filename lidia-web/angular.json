@@ -18,11 +18,14 @@
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
+            "baseHref": "/psychologist-lidia-website/",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
-              }
+                "input": "public",
+                 "output": "/assets/"
+              },
+              "src/assets"
             ],
             "styles": [
               "src/styles.css"
@@ -30,16 +33,18 @@
           },
           "configurations": {
             "production": {
+              "outputPath": "dist/lidia-web",
+              "optimization": true,
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "10MB",
+                  "maximumError": "8MB"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "4kB",
-                  "maximumError": "8kB"
+                  "maximumWarning": "20kB",
+                  "maximumError": "30kB"
                 }
               ],
               "outputHashing": "all"
@@ -84,6 +89,12 @@
             "styles": [
               "src/styles.css"
             ]
+          }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "dir": "dist/lidia-web/browser"
           }
         }
       }
