@@ -4,7 +4,9 @@
 <header class="header">
   <nav class="nav-container">
     <div class="logo-container">
+      <a (click)="scrollTo('inicio')" style="cursor: pointer;">
       <img src="assets/logo.png" alt="Lídia Tibúrcio Logo" class="logo-image">
+      </a>
     </div>
     <ul class="nav-menu">
       <li><a (click)="scrollTo('inicio')" [class.active]="activeSection === 'inicio'">Início</a></li>
