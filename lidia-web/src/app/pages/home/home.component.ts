@@ -35,7 +35,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       const targetPosition = elementPosition - headerOffset;
       const startPosition = window.pageYOffset;
       const distance = targetPosition - startPosition;
-      const duration = 1000; // 1 segundo
+      const duration = 1000;
       let start: number | null = null;
 
       const animateScroll = (timestamp: number) => {
@@ -43,7 +43,6 @@ export class HomeComponent implements OnInit, OnDestroy {
         const progress = timestamp - start;
         const percentage = Math.min(progress / duration, 1);
         
-        // Função de easing (ease-in-out)
         const easeInOutCubic = (t: number): number => {
           return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
         };
@@ -64,7 +63,6 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   scrollToMobile(fragment: string): void {
     this.closeMobileMenu();
-    // Pequeno delay para fechar o menu antes de scrollar
     setTimeout(() => {
       this.scrollTo(fragment);
     }, 300);
@@ -79,7 +77,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   private updateActiveSection(): void {
-    if (this.isScrolling) return; // Não atualiza durante scroll animado
+    if (this.isScrolling) return; 
     
     const sections = ['inicio', 'servicos', 'sobre', 'localizacao', 'contato'];
     for (const section of sections) {
