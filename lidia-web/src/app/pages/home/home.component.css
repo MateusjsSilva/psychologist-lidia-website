@@ -1,1 +1,44 @@
 /* Estilos específicos do componente home, se necessário */
+
+/* Tornar o card de contato interativo quando for um link */
+.contact-link {
+	transition: transform 0.18s ease, box-shadow 0.18s ease;
+	border-radius: 8px;
+	padding: 14px;
+}
+
+.contact-link:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 20px rgba(0, 128, 255,0.12);
+}
+
+.contact-link:focus {
+	outline: 3px solid rgba(34,139,230,0.25);
+	outline-offset: 2px;
+}
+
+.contact-link .contact-icon img.icon-image {
+	width: 40px;
+	height: 40px;
+}
+
+/* Justificar o texto da seção 'Sobre' */
+.about-text {
+	text-align: justify;
+	text-justify: inter-word;
+	line-height: 1.6;
+}
+
+/* Fonte cursiva consistente para títulos */
+.cursive-title {
+	font-family: "Playpen Sans Hebrew", cursive;
+	font-weight: 600;
+}
+
+/* Ajustes para telas pequenas: usar peso mais leve e tamanho menor para legibilidade */
+@media (max-width: 480px) {
+	.cursive-title {
+		font-weight: 400;
+		font-size: 1.6rem; /* ajuste conforme necessário */
+	}
+}

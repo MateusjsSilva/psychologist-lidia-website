@@ -9,6 +9,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   activeSection: string = '';
   isMobileMenuOpen: boolean = false;
+  currentYear: number = new Date().getFullYear();
   private scrollListener!: () => void;
   private isScrolling: boolean = false;
 
