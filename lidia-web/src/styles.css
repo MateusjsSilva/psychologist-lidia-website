@@ -217,7 +217,7 @@ html {
     position: absolute;
     transform: translate(-50%, -50%);
     width: 400px;
-    height: 500px;
+    height: 580px;
     background: var(--secondary-color);
     border-radius: 30px;
     opacity: 0;
@@ -245,9 +245,9 @@ html {
   transform: translate(-50%, -50%);
   z-index: 3;
   width: 380px;
-  height: 480px;
   border-radius: 25px;
-  object-fit: cover;
+  object-fit: fill;
+  object-position: center;
   box-shadow: 0 10px 30px rgba(0, 127, 255, 0.3);
 }
 
@@ -483,6 +483,7 @@ html {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 10%;
   border-radius: 50%;
 }
 
@@ -744,18 +745,29 @@ html {
 
   .hero {
     padding: 20px 15px;
+    overflow: visible; /* permitir que a imagem expanda sem ser cortada */
   }
 
-  .hero h1 {
-    font-size: 2.2em;
-    line-height: 1.2;
-    word-wrap: break-word;
+  .hero-image-container {
+    height: auto; /* container ajusta conforme a imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
   }
 
-  .hero-subtitle {
-    font-size: 1.1em;
-    padding: 0 10px;
-    word-wrap: break-word;
+  .hero-image {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: 250px;
+    max-width: 90%;
+    height: auto; /* ocupa a altura que precisar */
+    margin: 0 auto;
+    border-radius: 16px;
+    object-fit: contain;
+    object-position: center;
   }
 
   .hero-content {
@@ -793,7 +805,7 @@ html {
 
   .hero-image-bg {
     width: 260px;
-    height: 320px;
+    height: 330px;
   }
 
   .about-container {
@@ -929,33 +941,33 @@ html {
   }
 
   .hero-image-container {
-    height: 280px;
+    height: auto;
+    padding: 8px 0;
   }
 
   .hero-image {
     width: 220px;
-    height: 270px;
-  }
-
-  .hero-image-bg {
-    width: 230px;
-    height: 290px;
+    max-width: 95%;
+    height: auto; /* ocupa a altura que precisar */
+    position: relative;
+    transform: none;
+    margin: 0 auto;
   }
 }
 
 /* Media query para telas muito pequenas */
 @media (max-width: 375px) {
   .hero-image-container {
-    height: 250px;
+    height: auto;
+    padding: 6px 0;
   }
 
   .hero-image {
     width: 200px;
-    height: 240px;
-  }
-
-  .hero-image-bg {
-    width: 210px;
-    height: 260px;
+    max-width: 98%;
+    height: auto; /* ocupa a altura que precisar */
+    position: relative;
+    transform: none;
+    margin: 0 auto;
   }
 }
