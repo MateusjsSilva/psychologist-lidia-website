@@ -2,7 +2,7 @@
 
 Official website for psychologist **Lídia Tibúrcio**, specialized in Logotherapy. The platform presents her professional profile, services (online and in-person in Maceió-AL), and her therapeutic approach based on Viktor Frankl's work.
 
-## 🎯 About the Project
+## About the Project
 
 Institutional website developed with focus on:
 - **Minimalist design** with serene colors that convey calm and trust
@@ -11,33 +11,33 @@ Institutional website developed with focus on:
 - **Performance** optimized for fast loading
 - **Accessibility** following web best practices
 
-## ✨ Features
+## Features
 
-- ✅ Complete professional profile
-- ✅ Information about Logotherapy
-- ✅ Services offered (online and in-person)
-- ✅ Office location in Maceió-AL
-- ✅ Contact form via WhatsApp
-- ✅ Links to social networks (Instagram)
-- ✅ Responsive and modern design
-- ✅ SEO optimized with meta tags and Schema.org
-- ✅ Sitemap and robots.txt configured
+- Complete professional profile
+- Information about Logotherapy
+- Services offered (online and in-person)
+- Office location in Maceió-AL
+- Contact form via WhatsApp
+- Links to social networks (Instagram)
+- Responsive and modern design
+- SEO optimized with meta tags and Schema.org
+- Sitemap and robots.txt configured
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Angular 20.2.0** - Main framework
 - **TypeScript 5.9.2** - Programming language
 - **HTML5 & CSS3** - Structure and styling
 - **RxJS** - Reactive programming
 
-## 📋 Prerequisites
+## Prerequisites
 
 Before starting, you need to have installed:
 - **Node.js** (version 18 or higher)
 - **npm** (usually comes with Node.js)
 - **Angular CLI** (installed globally)
 
-## 🚀 How to Install and Run
+## How to Install and Run
 
 ### 1. Clone the repository
 
@@ -73,7 +73,7 @@ ng build
 
 The compiled files will be in `dist/lidia-web/browser/`
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 psychologist-lidia-website/
@@ -94,17 +94,17 @@ psychologist-lidia-website/
 └── README.md
 ```
 
-## 🔍 SEO and Optimizations
+## SEO and Optimizations
 
 The site is optimized for search engines with:
 
-- ✅ Complete meta tags (description, keywords, Open Graph)
-- ✅ Schema.org structured data (ProfessionalService)
-- ✅ Sitemap.xml configured
-- ✅ Robots.txt configured
-- ✅ Canonical URLs
-- ✅ Geographic meta tags (Maceió-AL)
-- ✅ Structured data for Google My Business
+- Complete meta tags (description, keywords, Open Graph)
+- Schema.org structured data (ProfessionalService)
+- Sitemap.xml configured
+- Robots.txt configured
+- Canonical URLs
+- Geographic meta tags (Maceió-AL)
+- Structured data for Google My Business
 
 ### To submit to Google Search Console:
 
@@ -112,7 +112,7 @@ The site is optimized for search engines with:
 2. Add your property (site domain)
 3. Submit the sitemap: `https://your-domain.com/sitemap.xml`
 
-## 📱 Contact Information
+## Contact Information
 
 - **Name:** Lídia Tibúrcio
 - **CRP:** 15/6683
@@ -121,7 +121,7 @@ The site is optimized for search engines with:
 - **Instagram:** [@lidia.tiburcio](https://www.instagram.com/lidia.tiburcio)
 - **Location:** Edifício Empresarial Le Monde, Rua José Soares Sobrinho, Jatiúca, Maceió - AL, CEP: 57036-640
 
-## 🎨 Design Features
+## Design Features
 
 - Serene and professional color palette
 - Modern and readable typography
@@ -130,7 +130,7 @@ The site is optimized for search engines with:
 - Intuitive navigation
 - Floating WhatsApp button
 
-## 📝 Available Scripts
+## Available Scripts
 
 ```bash
 # Development
@@ -149,7 +149,7 @@ npm test           # Run unit tests
 ng test            # Alternative
 ```
 
-## 🔧 Important Configurations
+## Important Configurations
 
 ### Assets
 
@@ -157,10 +157,12 @@ Assets are organized in:
 - `src/assets/` - Images, icons, logos
 - `public/` - Public files (robots.txt, sitemap.xml)
 
-## 📄 License
+## License
 
 This project is private and belongs to psychologist Lídia Tibúrcio.
 
-## 👨‍💻 Developed by
+**Note:** This repository is public on GitHub for portfolio and demonstration purposes. All rights reserved.
+
+## Developed by
 
 Developed by [Mateus Silva](https://www.mateussilva.dev.br)
