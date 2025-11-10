@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.lidiatiburcio.com.br/sitemap.xml
+

@@ -21,9 +21,19 @@
             "baseHref": "/",
             "assets": [
               {
+                "glob": "robots.txt",
+                "input": "public",
+                "output": "/"
+              },
+              {
+                "glob": "sitemap.xml",
+                "input": "public",
+                "output": "/"
+              },
+              {
                 "glob": "**/*",
                 "input": "public",
-                 "output": "/assets/"
+                "output": "/assets/"
               },
               "src/assets"
             ],
