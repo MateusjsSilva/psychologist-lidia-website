@@ -196,8 +196,8 @@ html {
 
 .hero-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  grid-template-columns: 1fr 0.7fr;
+  gap: 40px;
   align-items: center;
 }
 
@@ -210,7 +210,8 @@ html {
   display: flex;    
   justify-content: center;
   align-items: center;
-  height: 480px; 
+  height: 480px;
+  margin-left: -20px;
 }
 
 .hero-image-bg {
@@ -270,6 +271,7 @@ html {
   color: #2c2c2cda;
   margin-bottom: 20px;
   font-weight: 700;
+  max-width: 500px;
 }
 
 .hero-subtitle {
@@ -277,7 +279,6 @@ html {
   color: var(--text-light);
   margin-bottom: 30px;
   max-width: 600px;
-  margin-left: auto;
   margin-right: auto;
 }
 
